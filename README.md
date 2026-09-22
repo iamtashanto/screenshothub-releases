@@ -22,46 +22,26 @@
 
 </div>
 
-## ⚡ Quick Install (Terminal / Package Managers)
+## ⚡ Quick Install (Terminal Commands)
 
-Install ScreenshotHub in seconds with your preferred terminal or package manager:
+Install ScreenshotHub in seconds with a single terminal command:
 
-### 🍎 macOS
-**Option A: 1-Line Universal Installer (Recommended)**
+### 🍎 macOS (Apple Silicon & Intel)
+Automatically detects your architecture (M1/M2/M3/M4 or Intel), downloads, installs to `/Applications`, and clears Gatekeeper quarantine:
 ```bash
 curl -fsSL https://ss.tashanto.com/install.sh | bash
 ```
 
-**Option B: Homebrew Cask**
-```bash
-brew install --cask iamtashanto/tap/screenshothub
-```
-*(Or `brew tap iamtashanto/tap && brew install --cask screenshothub`)*
-
----
-
-### 🪟 Windows
-**Option A: 1-Line PowerShell Installer (Recommended)**
+### 🪟 Windows (PowerShell)
+Downloads the latest installer and runs the setup wizard:
 ```powershell
 irm https://ss.tashanto.com/install.ps1 | iex
 ```
 
-**Option B: Windows Package Manager (Winget)**
-```cmd
-winget install --id ScreenshotHub.ScreenshotHub -e
-```
-
----
-
 ### 🐧 Linux (Ubuntu / Debian / Mint)
-**Option A: 1-Line Debian Installer**
+Downloads the official `.deb` package and installs via `dpkg`:
 ```bash
 curl -fsSL https://ss.tashanto.com/install-linux.sh | bash
-```
-
-**Option B: Manual DPKG**
-```bash
-sudo dpkg -i screenshothub_1.0.2_amd64.deb || sudo apt-get install -f -y
 ```
 
 ---
@@ -72,12 +52,12 @@ Download the standalone installer or portable binary directly for your operating
 
 | Platform | Architecture / Format | Direct Download Link |
 | :--- | :--- | :--- |
-| **🍎 macOS (Apple Silicon)** | M1 / M2 / M3 / M4 (`.dmg`) | [📥 Download ScreenshotHub Apple Silicon](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.2-arm64.dmg) |
-| **🍎 macOS (Intel)** | x86_64 64-bit (`.dmg`) | [📥 Download ScreenshotHub Intel DMG](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.2.dmg) |
-| **🪟 Windows (x64)** | Setup Installer (`.exe`) | [📥 Download Windows Installer](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-Setup-1.0.2.exe) |
-| **🪟 Windows (Portable)** | Standalone Portable (`.zip`) | [📥 Download Windows Portable ZIP](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.2-win.zip) |
-| **🐧 Linux (Debian / Ubuntu)** | Debian Package (`.deb`) | [📥 Download Linux .deb](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/screenshothub_1.0.2_amd64.deb) |
-| **🐧 Linux (Universal)** | Standalone AppImage (`.AppImage`) | [📥 Download Linux AppImage](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.2.AppImage) |
+| **🍎 macOS (Apple Silicon)** | M1 / M2 / M3 / M4 (`.dmg`) | [📥 Download ScreenshotHub Apple Silicon](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.3-arm64.dmg) |
+| **🍎 macOS (Intel)** | x86_64 64-bit (`.dmg`) | [📥 Download ScreenshotHub Intel DMG](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.3.dmg) |
+| **🪟 Windows (x64)** | Setup Installer (`.exe`) | [📥 Download Windows Installer](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-Setup-1.0.3.exe) |
+| **🪟 Windows (Portable)** | Standalone Portable (`.zip`) | [📥 Download Windows Portable ZIP](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.3-win.zip) |
+| **🐧 Linux (Debian / Ubuntu)** | Debian Package (`.deb`) | [📥 Download Linux .deb](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/screenshothub_1.0.3_amd64.deb) |
+| **🐧 Linux (Universal)** | Standalone AppImage (`.AppImage`) | [📥 Download Linux AppImage](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.3.AppImage) |
 
 > 💡 *Looking for older versions or checksums? Browse all builds on our [GitHub Releases Page](https://github.com/iamtashanto/screenshothub-releases/releases).*
 
