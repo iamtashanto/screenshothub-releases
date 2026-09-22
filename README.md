@@ -22,26 +22,46 @@
 
 </div>
 
-## ⚡ Quick Install (Terminal Commands)
+## ⚡ Quick Install (Terminal / Package Managers)
 
-Install ScreenshotHub in seconds with a single terminal command:
+Install ScreenshotHub in seconds with your preferred terminal or package manager:
 
-### 🍎 macOS (Apple Silicon & Intel)
-Automatically detects your architecture (M1/M2/M3/M4 or Intel), downloads, installs to `/Applications`, and clears Gatekeeper quarantine:
+### 🍎 macOS
+**Option A: 1-Line Universal Installer (Recommended)**
 ```bash
 curl -fsSL https://ss.tashanto.com/install.sh | bash
 ```
 
-### 🪟 Windows (PowerShell)
-Downloads the latest installer and runs the setup wizard:
+**Option B: Homebrew Cask**
+```bash
+brew install --cask iamtashanto/tap/screenshothub
+```
+*(Or `brew tap iamtashanto/tap && brew install --cask screenshothub`)*
+
+---
+
+### 🪟 Windows
+**Option A: 1-Line PowerShell Installer (Recommended)**
 ```powershell
 irm https://ss.tashanto.com/install.ps1 | iex
 ```
 
+**Option B: Windows Package Manager (Winget)**
+```cmd
+winget install --id ScreenshotHub.ScreenshotHub -e
+```
+
+---
+
 ### 🐧 Linux (Ubuntu / Debian / Mint)
-Downloads the official `.deb` package and installs via `dpkg`:
+**Option A: 1-Line Debian Installer**
 ```bash
 curl -fsSL https://ss.tashanto.com/install-linux.sh | bash
+```
+
+**Option B: Manual DPKG**
+```bash
+sudo dpkg -i screenshothub_1.0.2_amd64.deb || sudo apt-get install -f -y
 ```
 
 ---
