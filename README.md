@@ -52,12 +52,12 @@ Download the standalone installer or portable binary directly for your operating
 
 | Platform | Architecture / Format | Direct Download Link |
 | :--- | :--- | :--- |
-| **🍎 macOS (Apple Silicon)** | M1 / M2 / M3 / M4 (`.dmg`) | [📥 Download ScreenshotHub Apple Silicon](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.5-arm64.dmg) |
-| **🍎 macOS (Intel)** | x86_64 64-bit (`.dmg`) | [📥 Download ScreenshotHub Intel DMG](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.5.dmg) |
-| **🪟 Windows (x64)** | Setup Installer (`.exe`) | [📥 Download Windows Installer](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-Setup-1.0.5.exe) |
-| **🪟 Windows (Portable)** | Standalone Portable (`.zip`) | [📥 Download Windows Portable ZIP](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.5-win.zip) |
-| **🐧 Linux (Debian / Ubuntu)** | Debian Package (`.deb`) | [📥 Download Linux .deb](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/screenshothub_1.0.5_amd64.deb) |
-| **🐧 Linux (Universal)** | Standalone AppImage (`.AppImage`) | [📥 Download Linux AppImage](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.5.AppImage) |
+| **🍎 macOS (Apple Silicon)** | M1 / M2 / M3 / M4 (`.dmg`) | [📥 Download ScreenshotHub Apple Silicon](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.10-arm64.dmg) |
+| **🍎 macOS (Intel)** | x86_64 64-bit (`.dmg`) | [📥 Download ScreenshotHub Intel DMG](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.10.dmg) |
+| **🪟 Windows (x64)** | Setup Installer (`.exe`) | [📥 Download Windows Installer](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-Setup-1.0.10.exe) |
+| **🪟 Windows (Portable)** | Standalone Portable (`.zip`) | [📥 Download Windows Portable ZIP](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.10-win.zip) |
+| **🐧 Linux (Debian / Ubuntu)** | Debian Package (`.deb`) | [📥 Download Linux .deb](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/screenshothub_1.0.10_amd64.deb) |
+| **🐧 Linux (Universal)** | Standalone AppImage (`.AppImage`) | [📥 Download Linux AppImage](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.10.AppImage) |
 
 > 💡 *Looking for older versions or checksums? Browse all builds on our [GitHub Releases Page](https://github.com/iamtashanto/screenshothub-releases/releases).*
 
