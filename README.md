@@ -52,12 +52,12 @@ Download the standalone installer or portable binary directly for your operating
 
 | Platform | Architecture / Format | Direct Download Link |
 | :--- | :--- | :--- |
-| **🍎 macOS (Apple Silicon)** | M1 / M2 / M3 / M4 (`.dmg`) | [📥 Download ScreenshotHub Apple Silicon](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.10-arm64.dmg) |
-| **🍎 macOS (Intel)** | x86_64 64-bit (`.dmg`) | [📥 Download ScreenshotHub Intel DMG](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.10.dmg) |
-| **🪟 Windows (x64)** | Setup Installer (`.exe`) | [📥 Download Windows Installer](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub.Setup.1.0.10.exe) |
-| **🪟 Windows (Portable)** | Standalone Portable (`.exe`) | [📥 Download Windows Portable EXE](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub.1.0.10.exe) |
-| **🐧 Linux (Debian / Ubuntu)** | Debian Package (`.deb`) | [📥 Download Linux .deb](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/screenshothub_1.0.10_amd64.deb) |
-| **🐧 Linux (Universal)** | Standalone AppImage (`.AppImage`) | [📥 Download Linux AppImage](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.10.AppImage) |
+| **🍎 macOS (Apple Silicon)** | M1 / M2 / M3 / M4 (`.dmg`) | [📥 Download ScreenshotHub Apple Silicon](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.13-arm64.dmg) |
+| **🍎 macOS (Intel)** | x86_64 64-bit (`.dmg`) | [📥 Download ScreenshotHub Intel DMG](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.13.dmg) |
+| **🪟 Windows (x64)** | Setup Installer (`.exe`) | [📥 Download Windows Installer](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub.Setup.1.0.13.exe) |
+| **🪟 Windows (Portable)** | Standalone Portable (`.exe`) | [📥 Download Windows Portable EXE](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub.1.0.13.exe) |
+| **🐧 Linux (Debian / Ubuntu)** | Debian Package (`.deb`) | [📥 Download Linux .deb](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/screenshothub_1.0.13_amd64.deb) |
+| **🐧 Linux (Universal)** | Standalone AppImage (`.AppImage`) | [📥 Download Linux AppImage](https://github.com/iamtashanto/screenshothub-releases/releases/latest/download/ScreenshotHub-1.0.13.AppImage) |
 
 > 💡 *Looking for older versions or checksums? Browse all builds on our [GitHub Releases Page](https://github.com/iamtashanto/screenshothub-releases/releases).*
 
@@ -70,9 +70,9 @@ Download the standalone installer or portable binary directly for your operating
 - 🎨 **Rich Annotation Suite**: Built-in arrows, numbered step badges, blur/pixelate tool for sensitive data, shapes, text, and highlighter.
 - 📋 **Step-by-Step SOP Guide Creator**: Build sequential visual walkthroughs and developer documentation in minutes.
 - ⌨️ **Global Background Hotkeys**:
-  - `⌥ / Alt + Shift + 1`: Snipping tool (Interactive drag region)
-  - `⌥ / Alt + Shift + 2`: Capture Active Window
-  - `⌥ / Alt + Shift + 3`: Capture Entire Screen
+  - `Cmd / Ctrl + Shift + 7`: Snipping tool (Interactive drag region)
+  - `Cmd / Ctrl + Shift + 8`: Capture Entire Screen
+  - `Cmd / Ctrl + Shift + 9`: Capture Active Window
   - `⌥ / Alt + Shift + 5`: Delayed Timer Capture
 - ☁️ **Instant Cloud Sync & Share**: Generate secure, short public links in one click via [ss.tashanto.com](https://ss.tashanto.com).
 
