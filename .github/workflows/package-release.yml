@@ -1,0 +1,63 @@
+name: Package prebuilt desktop release
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Draft release tag
+        required: true
+      sha256:
+        description: SHA256 of desktop-build-input.zip
+        required: true
+permissions:
+  contents: write
+jobs:
+  package:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            platform: win
+          - os: ubuntu-latest
+            platform: linux
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Download compiled application
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          EXPECTED_SHA: ${{ inputs.sha256 }}
+        run: |
+          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern desktop-build-input.zip
+          node -e "const fs=require('fs'),c=require('crypto');if(c.createHash('sha256').update(fs.readFileSync('desktop-build-input.zip')).digest('hex')!==process.env.EXPECTED_SHA)process.exit(1)"
+          unzip -q desktop-build-input.zip -d app
+      - name: Install packaging dependencies
+        working-directory: app
+        run: npm ci
+      - name: Verify native responsive capture on Windows
+        if: matrix.platform == 'win'
+        working-directory: app
+        run: node scripts/run-desktop-capture-test.cjs
+      - name: Install Linux packaging dependencies
+        if: matrix.platform == 'linux'
+        run: sudo apt-get update && sudo apt-get install -y libarchive-tools libfuse2
+      - name: Package installers
+        working-directory: app
+        run: npx electron-builder --${{ matrix.platform }} --publish never
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: false
+      - name: Upload installers to draft release
+        shell: bash
+        working-directory: app
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag }}
+        run: |
+          shopt -s nullglob
+          files=(release/*.exe release/*.AppImage release/*.deb)
+          test "${#files[@]}" -gt 0
+          gh release upload "$RELEASE_TAG" "${files[@]}" --repo "$GITHUB_REPOSITORY" --clobber
